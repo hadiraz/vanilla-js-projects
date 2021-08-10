@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.flipper-container{
+    width: 80%;
+    height: 90%;
+    display:flex ;
+    flex-flow: column nowrap;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-box-flipper{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+}
+.top-box-flipper span{
+    cursor: pointer;
+}
+.flipper-nav-boxes:hover{
+    background-color:rgb(168, 168, 168);
+}
+.top-box-flipper span:first-child{
+    border-right: 1px solid black;
+}
+.flipper-nav-boxes{
+    width: 50%;
+    height: 100%;
+    background-color: #dfdfdf;
+}
+.flipper-nav-boxes.active{
+    background-color:rgb(168, 168, 168);
+}
+.click-box{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.color-name{
+    background-color: black;
+    border-radius:10px;
+    padding: 1em;
+}
+.btn{
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #848484 ;
+}
+.btn::selection{
+    background-color: transparent ;
+}
+.container-parts{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+.input-hex{
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+    color: black;
+    
+    letter-spacing: 2px;
+    padding: 0 5px;
+}
+.hex-box{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    display:none;
+}

@@ -1,0 +1,136 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f8;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container h1{
+    margin-bottom: 1rem;
+}
+.filter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1.5rem;
+}
+.filter-items{
+    border-radius: 5px;
+    box-shadow: -1px -1px 0px 1px #c49d62 , 1px 1px 1px 1px #916b30 ;
+    height: 26px;
+    text-align: center;
+    padding: 0em 1em;
+    margin-right: 1em;
+    font-size: 0.9em;
+    line-height: 26px;
+    color: #c49d63;
+    cursor: pointer;
+    
+}
+.menu-items-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item{
+    width: 520px;
+    margin: 0 0.2em 0.2em 0;
+    height: 140px;
+    padding: 1em;
+    display: flex;
+    border-radius: 10px;
+}
+.image-box{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-right: 1em;
+}
+.image-box img{
+    width: 200px;
+    height: 130px ;
+    background-size: cover;
+    border: 5px solid #c49d62;
+    border-radius: 5px;
+}
+.menu-detail{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 57%;
+    height: 100%;
+
+}
+.title-price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #ccc;
+    letter-spacing: 2px;
+}
+.title-price p{
+    color: #c49d62;
+}
+.detail-text{
+    font-size: 0.9em;
+    color: #64809d;
+}
+.filter-items.active{
+    background: blanchedalmond;
+}
+.filter-items::selection{
+    background-color: transparent;
+}
+@media screen and (max-width :570px){
+    .menu-detail{
+        margin-top: 1em;
+        width: 80%;
+    }
+    .menu-item{
+        flex-flow: column;
+        margin-top: 2em;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
+@media screen and (max-width :760px){
+    .menu-container{
+        width: 90%;
+    }
+    .menu-item{
+        width: 100%;
+    }
+}
+@media screen and (max-width :1200px){
+    .menu-container{
+        width: 100%;
+    }
+
+}
